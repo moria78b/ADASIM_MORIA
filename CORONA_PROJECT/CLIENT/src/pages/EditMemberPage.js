@@ -5,7 +5,6 @@ const EditMemberPage = ({ member }) => {
     const [editedMember, setEditedMember] = useState(member);
 
     const handleSubmit = (formData) => {
-        // Handle form submission here, update member details, etc.
         console.log('Form submitted with data:', formData);
     }
 
