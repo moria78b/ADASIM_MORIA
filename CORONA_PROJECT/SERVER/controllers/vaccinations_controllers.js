@@ -3,18 +3,16 @@ const vaccinations = require('../models/vaccinations');
 
 const createvaccinations = async (req, res) => {
     try {
-        const user = await User.findById(req.params.userId)//שליפת המשתמש שאליו נרצה לשייך את המאמר
-        //אמור להיות בדיקת הימצאות
-        //יצירת מאמר חדש עם הפרטים שנשלחו
+        const user = await User.findById(req.params.userId)
+
         const  vaccinations= await new vaccinations({
             title: req.body.title,
             content: req.body.content,
             userId: user._id
         })
-        //לא נראה לי שזה טוב
-        await vaccinations.save()//שמירת המאמר בקולקשן
-        await user.vaccinations.push(vaccinations)//הוספת המאמר למערך של המאמרים של משתמש זה
-        await user.save()//הוספה בפועל - שמירה
+        await vaccinations.save()
+        await user.vaccinations.push(vaccinations)
+        await user.save()
         res.json({myvaccinations:vaccinations})
     } catch (error) {
         
