@@ -1,0 +1,10 @@
+﻿  Twitter.cpp
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(10,16): warning C4566: character represented by universal-character-name '\u200B' cannot be represented in the current code page (1255)
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(21,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(23,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(34,21): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(41,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(51,32): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(63,28): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\moria\Documents\ConsoleApplication1\ConsoleApplication1\Twitter.cpp(67,33): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ConsoleApplication1.vcxproj -> C:\Users\moria\Documents\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
