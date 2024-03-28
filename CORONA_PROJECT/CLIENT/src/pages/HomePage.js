@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MemberList from '../components/MemberList';
-import { getAllMembers } from '../api/memberApi'; // You need to implement this API function
+import { getAllMembers } from '../api/memberApi'; 
 
 const HomePage = () => {
     const [members, setMembers] = useState([]);
