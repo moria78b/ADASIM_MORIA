@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const vaccinations = require('./vaccinations');
 
 const userSchema = mongoose.Schema({
-    // Personal details
     Name: { type: String, required: true },
     id: { type: String, required: true },
     address:{ type: String, required: true },
