@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3030'; // Adjust the URL according to your server configuration
+const BASE_URL = 'http://localhost:3030'; 
 
-// Function to fetch all members
 export const getAllMembers = async () => {
    try {
      const response = await axios.get(`${BASE_URL}/getAll`);
@@ -13,7 +12,6 @@ export const getAllMembers = async () => {
    }
 };
 
-// Function to fetch a single member by ID
 export const getMemberById = async (id) => {
    try {
      const response = await axios.get(`${BASE_URL}/getUser/${id}`);
@@ -24,7 +22,6 @@ export const getMemberById = async (id) => {
    }
 };
 
-// Function to add a new member
 export const addMember = async (newMember) => {
    try {
      const response = await axios.post(`${BASE_URL}/addMember`, newMember);
@@ -35,7 +32,6 @@ export const addMember = async (newMember) => {
    }
 };
 
-// Function to update an existing member
 export const updateMember = async (id, updatedMember) => {
    try {
      const response = await axios.put(`${BASE_URL}/updateMember/${id}`, updatedMember);
@@ -46,7 +42,6 @@ export const updateMember = async (id, updatedMember) => {
    }
 };
 
-// Function to delete a member by ID
 export const deleteMember = async (id) => {
    try {
      const response = await axios.delete(`${BASE_URL}/deleteMember/${id}`);
